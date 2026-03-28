@@ -19,11 +19,12 @@ Desarrollo Web y Aplicaciones para Móviles
 ## Capturas
 
 Agregando datos
-![WhatsApp Image 2026-03-27 at 9 15 39 PM](https://github.com/user-attachments/assets/8c686e0d-cda5-470f-8582-0cc77ac0a5ff)
+<img src="https://github.com/user-attachments/assets/c56753ae-81a8-49a0-9d38-419022f98f76" width="300"/>
 
 Guardando el registro
-![WhatsApp Image 2026-03-27 at 9 15 39 PM (1)](https://github.com/user-attachments/assets/70e0bcfa-896a-4b07-a824-239137ead178)
+<img src="https://github.com/user-attachments/assets/8c1bab5a-4711-4df3-a34e-4d63e6b599c4" width="300"/>
 
 Mostrando los detalles
-![WhatsApp Image 2026-03-27 at 9 15 39 PM (2)](https://github.com/user-attachments/assets/a04ecf7b-55ab-440b-8dd7-617f9f7ca593)
+<img src="https://github.com/user-attachments/assets/56ba336a-a182-4580-bdf5-bf84dc6f6d95" width="300"/>
+
 
