@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F1F5F9"
+    tools:context=".MainLab">
+
+    <!-- Título principal -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registro de Datos"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        android:textColor="#0F766E"
+        android:gravity="center"
+        android:layout_marginBottom="28dp" />
+
+    <!-- Tarjeta del formulario (cuadrada con borde negro) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_card"
+        android:padding="24dp"
+        android:elevation="6dp"
+        android:layout_marginBottom="28dp">
+
+        <!-- Nombre -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textSize="15sp"
+            android:textColor="#64748B"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/editNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa el nombre"
+            android:textColor="#0F172A"
+            android:background="@drawable/edit_text_background"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="18dp" />
+
+        <!-- Edad -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edad"
+            android:textSize="15sp"
+            android:textColor="#64748B"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/editEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa la edad"
+            android:inputType="number"
+            android:textColor="#0F172A"
+            android:background="@drawable/edit_text_background"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="18dp" />
+
+        <!-- Departamento -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Departamento"
+            android:textSize="15sp"
+            android:textColor="#64748B"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/editDepartamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa el departamento"
+            android:textColor="#0F172A"
+            android:background="@drawable/edit_text_background"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Botón -->
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#0F766E"
+            android:padding="16dp"
+            android:elevation="4dp" />
+
+    </LinearLayout>
+
+    <!-- Lista de Nombres -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista de Nombres"
+        android:textSize="16sp"
+        android:textColor="#64748B"
+        android:layout_marginBottom="8dp" />
+
+    <ListView
+        android:id="@+id/listViewNombres"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/rounded_card"
+        android:divider="#E2E8F0"
+        android:dividerHeight="1dp"
+        android:padding="10dp"
+        android:elevation="6dp"
+        android:layout_marginBottom="28dp" />
+
+    <!-- Datos adicionales -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Datos adicionales"
+        android:textSize="16sp"
+        android:textColor="#64748B"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/txtDetalles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecciona un nombre de la lista para ver los detalles"
+        android:textColor="#0F172A"
+        android:padding="24dp"
+        android:textSize="16sp"
+        android:background="@drawable/rounded_card"
+        android:elevation="6dp" />
+
+</LinearLayout>
