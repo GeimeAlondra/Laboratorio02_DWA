@@ -16,6 +16,15 @@ Este proyecto consiste en el desarrollo de una aplicación móvil en Android que
 ## Asignatura
 Desarrollo Web y Aplicaciones para Móviles
 
+## Codigo
+
+<img width="1238" height="665" alt="image" src="https://github.com/user-attachments/assets/8b307406-a8a1-4372-901b-aed62c6eceed" />
+<img width="1290" height="667" alt="image" src="https://github.com/user-attachments/assets/77f0e6cf-28e1-4cb0-a000-c2a384e99504" />
+
+<img width="1283" height="637" alt="image" src="https://github.com/user-attachments/assets/015d2b6a-d39b-466c-925d-4a377367a35a" />
+<img width="1287" height="663" alt="image" src="https://github.com/user-attachments/assets/c761ddad-5910-44e4-a1f4-6b116fec91e3" />
+
+
 ## Capturas
 
 <img src="https://github.com/user-attachments/assets/c56753ae-81a8-49a0-9d38-419022f98f76" width="300"/>
