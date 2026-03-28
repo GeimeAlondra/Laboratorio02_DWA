@@ -1,4 +1,4 @@
-package com.example.laboratorio2
+package com.example.laboratorio02
 
 import android.os.Bundle
 import android.widget.ArrayAdapter
@@ -8,9 +8,8 @@ import android.widget.ListView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.laboratorio02.R
 
-class MainLab : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var editNombre: EditText
     private lateinit var editEdad: EditText
@@ -18,7 +17,6 @@ class MainLab : AppCompatActivity() {
     private lateinit var btnAgregar: Button
     private lateinit var listViewNombres: ListView
     private lateinit var txtDetalles: TextView
-
     private val listaNombres = ArrayList<String>()
     private val listaEdades = ArrayList<String>()
     private val listaDepartamentos = ArrayList<String>()
@@ -29,20 +27,19 @@ class MainLab : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        editNombre = findViewById(R.id.editNombre)
-        editEdad = findViewById(R.id.editEdad)
+        editNombre       = findViewById(R.id.editNombre)
+        editEdad         = findViewById(R.id.editEdad)
         editDepartamento = findViewById(R.id.editDepartamento)
-        btnAgregar = findViewById(R.id.btnAgregar)
-        listViewNombres = findViewById(R.id.listViewNombres)
-        txtDetalles = findViewById(R.id.txtDetalles)
-
+        btnAgregar       = findViewById(R.id.btnAgregar)
+        listViewNombres  = findViewById(R.id.listViewNombres)
+        txtDetalles      = findViewById(R.id.txtDetalles)
 
         adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, listaNombres)
         listViewNombres.adapter = adapter
 
         btnAgregar.setOnClickListener {
-            val nombre = editNombre.text.toString().trim()
-            val edad = editEdad.text.toString().trim()
+            val nombre       = editNombre.text.toString().trim()
+            val edad         = editEdad.text.toString().trim()
             val departamento = editDepartamento.text.toString().trim()
 
             if (nombre.isNotEmpty() && edad.isNotEmpty() && departamento.isNotEmpty()) {
@@ -65,8 +62,10 @@ class MainLab : AppCompatActivity() {
         }
 
         listViewNombres.setOnItemClickListener { _, _, position, _ ->
-            val detalles = "Edad: ${listaEdades[position]}\nDepartamento: ${listaDepartamentos[position]}"
-            txtDetalles.text = detalles
+            txtDetalles.text =
+                "Nombre: ${listaNombres[position]}\n" +
+                        "Edad: ${listaEdades[position]}\n" +
+                        "Departamento: ${listaDepartamentos[position]}"
         }
     }
 }
